@@ -1,5 +1,16 @@
 #:schema node_modules/wrangler/config-schema.json
 
+compatibility_date = "2025-11-17"
+main = "src/index.ts"
+name = "noris-decap-oauth"
+
+route = { pattern = "decap.norislaw.com", zone_name = "norislaw.com", custom_domain = true }
+workers_dev = false
+
+[vars]
+GITHUB_REPO_PRIVATE = "1"
+
+
 # "compatibility_date" and "main" are values you are unlikely to need to change
 compatibility_date = "2025-11-17"     # schema version
 main = "src/index.ts"                 # entry point for the worker
