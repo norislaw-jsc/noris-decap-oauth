@@ -4,8 +4,8 @@ compatibility_date = "2025-11-17"
 main = "src/index.ts"
 name = "noris-decap-oauth"
 
-route = { pattern = "decap.norislaw.com", zone_name = "norislaw.com", custom_domain = true }
-workers_dev = false
+# Use workers.dev until norislaw.com is added as a Cloudflare DNS zone.
+workers_dev = true
 
 [vars]
 GITHUB_REPO_PRIVATE = "1"
